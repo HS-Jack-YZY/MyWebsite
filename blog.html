@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客 - HS_Jack_YZY</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-logo">HS_Jack_YZY</div>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="about.html">关于</a>
+            <a href="projects.html">项目</a>
+            <a href="blog.html" class="active">博客</a>
+            <a href="index.html#contact">联系</a>
+        </div>
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- 博客统计面板 -->
+    <section class="blog-stats">
+        <div class="stats-container">
+            <div class="stat-card">
+                <i class="fas fa-pencil-alt"></i>
+                <div class="stat-info">
+                    <span class="stat-number">10</span>
+                    <span class="stat-label">原创文章</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-eye"></i>
+                <div class="stat-info">
+                    <span class="stat-number">14,776</span>
+                    <span class="stat-label">总访问量</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-thumbs-up"></i>
+                <div class="stat-info">
+                    <span class="stat-number">36</span>
+                    <span class="stat-label">获赞数</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-bookmark"></i>
+                <div class="stat-info">
+                    <span class="stat-number">121</span>
+                    <span class="stat-label">收藏数</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文章分类 -->
+    <section class="blog-categories">
+        <div class="category-tabs">
+            <button class="category-tab active">全部</button>
+            <button class="category-tab">模式识别</button>
+            <button class="category-tab">C++</button>
+            <button class="category-tab">算法</button>
+        </div>
+    </section>
+
+    <!-- 文章列表 -->
+    <section class="blog-list">
+        <!-- 模式识别系列 -->
+        <article class="blog-card">
+            <div class="blog-content">
+                <div class="blog-meta">
+                    <span class="blog-category">模式识别</span>
+                    <span class="blog-date">2022-08-29</span>
+                </div>
+                <div class="blog-thumbnail">
+                    <img src="assets/blog/thumbnails/svm.png" alt="支持向量机">
+                </div>
+                <h2 class="blog-title">最优分类超平面与支持向量机</h2>
+                <p class="blog-excerpt">深入探讨SVM原理及其在模式识别中的应用，包括拉格朗日对偶问题、最优超平面求解、决策边界和支持向量等内容...</p>
+                <div class="blog-stats">
+                    <span><i class="fas fa-eye"></i> 2411</span>
+                    <span><i class="fas fa-thumbs-up"></i> 3</span>
+                    <span><i class="fas fa-bookmark"></i> 10</span>
+                    <span><i class="fas fa-comment"></i> 1</span>
+                </div>
+                <a href="https://blog.csdn.net/HS_Jack_ZZZ/article/details/126593786" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <div class="blog-content">
+                <div class="blog-meta">
+                    <span class="blog-category">模式识别</span>
+                    <span class="blog-date">2022-08-16</span>
+                </div>
+                <div class="blog-thumbnail">
+                    <img src="assets/blog/thumbnails/perceptron.png" alt="感知器算法">
+                </div>
+                <h2 class="blog-title">感知器算法</h2>
+                <p class="blog-excerpt">详细讲解感知器模型的原理、迭代修正过程以及基于梯度下降法的优化方法...</p>
+                <div class="blog-stats">
+                    <span><i class="fas fa-eye"></i> 483</span>
+                    <span><i class="fas fa-thumbs-up"></i> 1</span>
+                    <span><i class="fas fa-bookmark"></i> 0</span>
+                    <span><i class="fas fa-comment"></i> 0</span>
+                </div>
+                <a href="https://blog.csdn.net/HS_Jack_ZZZ/article/details/126363102" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <!-- 更多文章... -->
+    </section>
+
+    <!-- 分页 -->
+    <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <span class="page-dots">...</span>
+        <button class="page-btn">10</button>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 HS_Jack_YZY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // 移动端菜单
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // 分类标签切换
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html> 
