@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS_Jack_YZY - 个人网站</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-logo">HS_Jack_YZY</div>
+        <div class="nav-links">
+            <a href="#home" class="active">首页</a>
+            <a href="#about">关于</a>
+            <a href="#projects">项目</a>
+            <a href="#blog">博客</a>
+            <a href="#contact">联系</a>
+        </div>
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- 首页欢迎区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">
+                <span class="greeting">你好，我是</span>
+                <span class="name">HS_Jack_YZY</span>
+                <span class="title">全栈开发者 / 游戏开发者</span>
+            </h1>
+            <p class="description slide-up">
+                热爱编程，专注于Web开发和游戏开发。
+                目前在探索AI和量子计算领域。
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">查看项目</a>
+                <a href="#contact" class="btn secondary">联系我</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能展示区 -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">技术栈</h2>
+        <div class="skills-cloud">
+            <div class="skill-tag hover-effect">JavaScript</div>
+            <div class="skill-tag hover-effect">Python</div>
+            <div class="skill-tag hover-effect">C++</div>
+            <div class="skill-tag hover-effect">React</div>
+            <div class="skill-tag hover-effect">Vue.js</div>
+            <div class="skill-tag hover-effect">Node.js</div>
+            <div class="skill-tag hover-effect">游戏开发</div>
+            <div class="skill-tag hover-effect">机器学习</div>
+        </div>
+    </section>
+
+    <!-- Dashboard统计展示 -->
+    <section id="dashboard" class="dashboard">
+        <h2 class="section-title">数据概览</h2>
+        <div class="dashboard-grid">
+            <!-- 代码统计 -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-code"></i>
+                    <h3>代码统计</h3>
+                </div>
+                <div class="card-content">
+                    <div class="stat-item">
+                        <span class="stat-label">代码行数</span>
+                        <span class="stat-value">150,000+</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">项目数量</span>
+                        <span class="stat-value">12</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">贡献度</span>
+                        <span class="stat-value">
+                            <div class="contribution-graph">
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 80%"></div>
+                                <div class="bar" style="height: 40%"></div>
+                                <div class="bar" style="height: 90%"></div>
+                                <div class="bar" style="height: 70%"></div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 技能分布 -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>技能分布</h3>
+                </div>
+                <div class="card-content">
+                    <div class="skill-distribution">
+                        <div class="skill-bar">
+                            <span class="skill-name">前端开发</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">后端开发</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">游戏开发</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 博客统计 -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-book"></i>
+                    <h3>博客统计</h3>
+                </div>
+                <div class="card-content">
+                    <div class="stat-grid">
+                        <div class="stat-box">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">文章</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">10k+</span>
+                            <span class="stat-label">阅读</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">点赞</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">收藏</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 活动日历 -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>活动日历</h3>
+                </div>
+                <div class="card-content">
+                    <div class="activity-calendar">
+                        <div class="calendar-grid">
+                            <div class="calendar-day" style="background-color: var(--primary-color-10)"></div>
+                            <div class="calendar-day" style="background-color: var(--primary-color-25)"></div>
+                            <div class="calendar-day" style="background-color: var(--primary-color-50)"></div>
+                            <div class="calendar-day" style="background-color: var(--primary-color-75)"></div>
+                            <div class="calendar-day" style="background-color: var(--primary-color)"></div>
+                            <!-- 更多日历格子 -->
+                        </div>
+                        <div class="calendar-legend">
+                            <span>活跃度</span>
+                            <div class="legend-items">
+                                <div class="legend-item">低</div>
+                                <div class="legend-item">中</div>
+                                <div class="legend-item">高</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新项目预览 -->
+    <section id="featured-projects" class="featured-projects">
+        <h2 class="section-title">精选项目</h2>
+        <div class="project-grid">
+            <div class="project-card hover-effect">
+                <div class="project-image">
+                    <img src="assets/project1.jpg" alt="Create the World">
+                </div>
+                <div class="project-info">
+                    <h3>Create the World</h3>
+                    <p>代码创世模拟器，通过编程创造和管理虚拟世界</p>
+                    <div class="project-tags">
+                        <span>C++</span>
+                        <span>游戏开发</span>
+                        <span>AI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card hover-effect">
+                <div class="project-image">
+                    <img src="assets/project2.jpg" alt="猿途享">
+                </div>
+                <div class="project-info">
+                    <h3>猿途享</h3>
+                    <p>智能行程规划APP，优化你的旅行体验</p>
+                    <div class="project-tags">
+                        <span>React Native</span>
+                        <span>Node.js</span>
+                        <span>AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-more">
+            <a href="#projects" class="btn secondary">查看更多项目</a>
+        </div>
+    </section>
+
+    <!-- 最新博客预览 -->
+    <section id="latest-posts" class="latest-posts">
+        <h2 class="section-title">最新文章</h2>
+        <div class="posts-grid">
+            <article class="post-card hover-effect">
+                <div class="post-info">
+                    <span class="post-category">模式识别</span>
+                    <h3>最优分类超平面与支持向量机</h3>
+                    <p>深入探讨SVM原理及其在模式识别中的应用...</p>
+                    <div class="post-meta">
+                        <span><i class="fas fa-eye"></i> 2411</span>
+                        <span><i class="fas fa-thumbs-up"></i> 3</span>
+                        <span><i class="fas fa-bookmark"></i> 10</span>
+                    </div>
+                </div>
+            </article>
+            <article class="post-card hover-effect">
+                <div class="post-info">
+                    <span class="post-category">算法</span>
+                    <h3>数据结��与算法分析</h3>
+                    <p>探索高效的数据结构设计和算法优化方案...</p>
+                    <div class="post-meta">
+                        <span><i class="fas fa-eye"></i> 1846</span>
+                        <span><i class="fas fa-thumbs-up"></i> 5</span>
+                        <span><i class="fas fa-bookmark"></i> 8</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="view-more">
+            <a href="#blog" class="btn secondary">查看更多文章</a>
+        </div>
+    </section>
+
+    <!-- 联系部分 -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">联系我</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <a href="https://github.com/HS-Jack-YZY" class="social-link hover-effect">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://blog.csdn.net/HS_Jack_ZZZ" class="social-link hover-effect">
+                    <i class="fab fa-blogger"></i> CSDN
+                </a>
+                <a href="mailto:906581067@qq.com" class="social-link hover-effect">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 HS_Jack_YZY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // 移动端菜单
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 

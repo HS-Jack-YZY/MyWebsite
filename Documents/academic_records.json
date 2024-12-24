@@ -1,0 +1,536 @@
+{
+  "student_info": {
+    "name": "HS_Jack_YZY",
+    "major": "计算机科学与技术",
+    "academic_years": ["2020-2021", "2021-2022", "2022-2023"]
+  },
+  "courses": [
+    {
+      "semester": "2020-2021-1",
+      "courses": [
+        {
+          "id": 1,
+          "name": "大学计算机基础",
+          "credits": 2.00,
+          "score": 93,
+          "type": "必修"
+        },
+        {
+          "id": 2,
+          "name": "大学英语(一)",
+          "credits": 3.00,
+          "score": 85,
+          "type": "必修"
+        },
+        {
+          "id": 3,
+          "name": "高等数学B(一)",
+          "credits": 5.00,
+          "score": 97,
+          "type": "必修"
+        },
+        {
+          "id": 4,
+          "name": "军事训练",
+          "credits": 2.00,
+          "score": 95,
+          "type": "必修"
+        },
+        {
+          "id": 5,
+          "name": "马克思主义基本原理",
+          "credits": 2.50,
+          "score": 74,
+          "type": "必修"
+        },
+        {
+          "id": 6,
+          "name": "思想道德修养与法律基础",
+          "credits": 2.50,
+          "score": 88,
+          "type": "必修"
+        },
+        {
+          "id": 7,
+          "name": "体育(一)(篮球)",
+          "credits": 2.00,
+          "score": 94,
+          "type": "选修"
+        },
+        {
+          "id": 8,
+          "name": "统计学",
+          "credits": 3.00,
+          "score": 90,
+          "type": "必修"
+        },
+        {
+          "id": 9,
+          "name": "心理健康教育",
+          "credits": 2.00,
+          "score": 89,
+          "type": "必修"
+        },
+        {
+          "id": 10,
+          "name": "职业生涯发展规划",
+          "credits": 1.00,
+          "score": 95,
+          "type": "必修"
+        },
+        {
+          "id": 11,
+          "name": "中国对外贸易概论",
+          "credits": 2.00,
+          "score": 86,
+          "type": "必修"
+        }
+      ]
+    },
+    {
+      "semester": "2020-2021-2",
+      "courses": [
+        {
+          "id": 12,
+          "name": "C语言程序设计",
+          "credits": 3.00,
+          "score": 96,
+          "type": "选修"
+        },
+        {
+          "id": 13,
+          "name": "大学英语(二)",
+          "credits": 3.00,
+          "score": 87,
+          "type": "必修"
+        },
+        {
+          "id": 14,
+          "name": "高等数学B(二)",
+          "credits": 5.00,
+          "score": 94,
+          "type": "必修"
+        },
+        {
+          "id": 15,
+          "name": "金融学",
+          "credits": 3.50,
+          "score": 77,
+          "type": "必修"
+        },
+        {
+          "id": 16,
+          "name": "经济学科与专业导论",
+          "credits": 1.00,
+          "score": "合格",
+          "type": "必修"
+        },
+        {
+          "id": 17,
+          "name": "思想政治理论课实践环节",
+          "credits": 2.00,
+          "score": "优秀",
+          "type": "必修"
+        },
+        {
+          "id": 18,
+          "name": "体育(二)(篮球)",
+          "credits": 2.50,
+          "score": 91,
+          "type": "选修"
+        },
+        {
+          "id": 19,
+          "name": "微观经济学",
+          "credits": 3.50,
+          "score": 94,
+          "type": "必修"
+        },
+        {
+          "id": 20,
+          "name": "线性代数B",
+          "credits": 2.50,
+          "score": 92,
+          "type": "必修"
+        },
+        {
+          "id": 21,
+          "name": "中国近现代史纲要",
+          "credits": 2.00,
+          "score": 89,
+          "type": "必修"
+        }
+      ]
+    },
+    {
+      "semester": "2021-2022-1",
+      "courses": [
+        {
+          "id": 22,
+          "name": "C++程序设计",
+          "credits": 4.50,
+          "score": 96,
+          "type": "必修"
+        },
+        {
+          "id": 23,
+          "name": "C++课程设计",
+          "credits": 1.00,
+          "score": "优秀",
+          "type": "必修"
+        },
+        {
+          "id": 24,
+          "name": "大学物理-波动光学与近代物理",
+          "credits": 2.50,
+          "score": 94,
+          "type": "必修"
+        },
+        {
+          "id": 25,
+          "name": "电路原理",
+          "credits": 2.50,
+          "score": 95,
+          "type": "必修"
+        },
+        {
+          "id": 26,
+          "name": "概率论与数理统计B",
+          "credits": 2.50,
+          "score": 88,
+          "type": "必修"
+        },
+        {
+          "id": 27,
+          "name": "航空与航天(YW)",
+          "credits": 1.00,
+          "score": "合格",
+          "type": "选修"
+        },
+        {
+          "id": 28,
+          "name": "计算机导论",
+          "credits": 2.00,
+          "score": 88,
+          "type": "必修"
+        },
+        {
+          "id": 29,
+          "name": "计算机网络技术(YW)",
+          "credits": 1.00,
+          "score": "合格",
+          "type": "选修"
+        },
+        {
+          "id": 30,
+          "name": "劳动实践",
+          "credits": 0.50,
+          "score": "合格",
+          "type": "必修"
+        },
+        {
+          "id": 31,
+          "name": "毛泽东思想和中国特色社会主义理论体系概论",
+          "credits": 5.00,
+          "score": 94,
+          "type": "必修"
+        },
+        {
+          "id": 32,
+          "name": "人工智能与信息社会(YW)",
+          "credits": 2.00,
+          "score": "合格",
+          "type": "选修"
+        },
+        {
+          "id": 33,
+          "name": "生命智能(YW)",
+          "credits": 2.00,
+          "score": "合格",
+          "type": "选修"
+        },
+        {
+          "id": 34,
+          "name": "数据结构",
+          "credits": 4.50,
+          "score": 98,
+          "type": "必修"
+        },
+        {
+          "id": 35,
+          "name": "数据结构课程设计",
+          "credits": 1.00,
+          "score": "优秀",
+          "type": "必修"
+        },
+        {
+          "id": 36,
+          "name": "体育(三)(篮球)",
+          "credits": 2.00,
+          "score": 94,
+          "type": "选修"
+        },
+        {
+          "id": 37,
+          "name": "物理实验(一)",
+          "credits": 1.50,
+          "score": 90,
+          "type": "必修"
+        },
+        {
+          "id": 38,
+          "name": "英语口语",
+          "credits": 2.00,
+          "score": 92,
+          "type": "选修"
+        },
+        {
+          "id": 39,
+          "name": "影视鉴赏(YW)",
+          "credits": 2.00,
+          "score": "合格",
+          "type": "选修"
+        }
+      ]
+    },
+    {
+      "semester": "2021-2022-2",
+      "courses": [
+        {
+          "id": 40,
+          "name": "Java程序设计",
+          "credits": 2.00,
+          "score": 81,
+          "type": "必修"
+        },
+        {
+          "id": 41,
+          "name": "创业基础",
+          "credits": 2.00,
+          "score": "优秀",
+          "type": "必修"
+        },
+        {
+          "id": 42,
+          "name": "大学物理-电磁学",
+          "credits": 2.00,
+          "score": 73,
+          "type": "必修"
+        },
+        {
+          "id": 43,
+          "name": "大学物理-力学",
+          "credits": 2.00,
+          "score": 91,
+          "type": "必修"
+        },
+        {
+          "id": 44,
+          "name": "电子技术基础",
+          "credits": 4.50,
+          "score": 97,
+          "type": "必修"
+        },
+        {
+          "id": 45,
+          "name": "电子线路综合课程设计",
+          "credits": 1.00,
+          "score": "优秀",
+          "type": "必修"
+        },
+        {
+          "id": 46,
+          "name": "汇编语言程序设计",
+          "credits": 4.00,
+          "score": 91,
+          "type": "必修"
+        },
+        {
+          "id": 47,
+          "name": "计算机类研讨课",
+          "credits": 0.50,
+          "score": "合格",
+          "type": "必修"
+        },
+        {
+          "id": 48,
+          "name": "军事理论",
+          "credits": 2.00,
+          "score": 84,
+          "type": "必修"
+        },
+        {
+          "id": 49,
+          "name": "离散数学",
+          "credits": 3.00,
+          "score": 98,
+          "type": "必修"
+        },
+        {
+          "id": 50,
+          "name": "人工智能导论",
+          "credits": 2.50,
+          "score": 98,
+          "type": "必修"
+        },
+        {
+          "id": 51,
+          "name": "数据库原理",
+          "credits": 4.00,
+          "score": 89,
+          "type": "必修"
+        },
+        {
+          "id": 52,
+          "name": "体育(四)",
+          "credits": 2.50,
+          "score": 86,
+          "type": "必修"
+        },
+        {
+          "id": 53,
+          "name": "物理实验(二)",
+          "credits": 1.00,
+          "score": 82,
+          "type": "必修"
+        },
+        {
+          "id": 54,
+          "name": "形势与政策",
+          "credits": 2.00,
+          "score": "合格",
+          "type": "必修"
+        },
+        {
+          "id": 55,
+          "name": "最优化导论",
+          "credits": 3.00,
+          "score": 83,
+          "type": "必修"
+        }
+      ]
+    },
+    {
+      "semester": "2022-2023-1",
+      "courses": [
+        {
+          "id": 56,
+          "name": "编译原理",
+          "credits": 3.50,
+          "score": 93,
+          "type": "必修"
+        },
+        {
+          "id": 57,
+          "name": "操作系统",
+          "credits": 4.00,
+          "score": 96,
+          "type": "必修"
+        },
+        {
+          "id": 58,
+          "name": "操作系统课程设计",
+          "credits": 1.00,
+          "score": "优秀",
+          "type": "必修"
+        },
+        {
+          "id": 59,
+          "name": "计算机网络",
+          "credits": 3.50,
+          "score": 73,
+          "type": "必修"
+        },
+        {
+          "id": 60,
+          "name": "计算机组成原理",
+          "credits": 4.50,
+          "score": 92,
+          "type": "必修"
+        },
+        {
+          "id": 61,
+          "name": "计算机组成原理课程设计",
+          "credits": 1.00,
+          "score": "优秀",
+          "type": "必修"
+        },
+        {
+          "id": 62,
+          "name": "算法设计与分析",
+          "credits": 2.50,
+          "score": 96,
+          "type": "必修"
+        }
+      ]
+    },
+    {
+      "semester": "2022-2023-2",
+      "courses": [
+        {
+          "id": 63,
+          "name": "Linux操作系统及内核分析",
+          "credits": 2.50,
+          "score": 91,
+          "type": "选修"
+        },
+        {
+          "id": 64,
+          "name": "Web开发与应用",
+          "credits": 3.00,
+          "score": 95,
+          "type": "选修"
+        },
+        {
+          "id": 65,
+          "name": "计算机接口技术",
+          "credits": 2.50,
+          "score": 98,
+          "type": "必修"
+        },
+        {
+          "id": 66,
+          "name": "计算机体系结构",
+          "credits": 2.00,
+          "score": 91,
+          "type": "必修"
+        },
+        {
+          "id": 67,
+          "name": "计算机网络课程设计",
+          "credits": 1.00,
+          "score": "优秀",
+          "type": "必修"
+        },
+        {
+          "id": 68,
+          "name": "计算机网络组网技术",
+          "credits": 2.50,
+          "score": 96,
+          "type": "选修"
+        },
+        {
+          "id": 69,
+          "name": "就业指导",
+          "credits": 1.00,
+          "score": 94,
+          "type": "必修"
+        },
+        {
+          "id": 70,
+          "name": "软件工程",
+          "credits": 3.00,
+          "score": 92,
+          "type": "必修"
+        }
+      ]
+    }
+  ],
+  "statistics": {
+    "total_credits": 143.50,
+    "average_score": 90.948,
+    "excellent_courses": 8,
+    "pass_courses": 7,
+    "failed_courses": 0
+  }
+} 
