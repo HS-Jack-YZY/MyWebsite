@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>项目展示 - HS_Jack_YZY</title>
+    <title>项目展示 - 我的个人网站</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" href="assets/common/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- 导航栏 -->
@@ -18,283 +17,45 @@
             </a>
         </div>
         <div class="nav-links">
-            <a href="index.html">首页</a>
+            <a href="index.html" class="active">首页</a>
             <a href="about.html">关于我</a>
-            <a href="projects.html" class="active">项目</a>
+            <a href="projects.html">项目</a>
             <a href="blog.html">博客</a>
             <a href="https://github.com/HS-Jack-YZY" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-github"></i>
             </a>
         </div>
-        <button class="nav-toggle" aria-label="切换导航菜单">
+        <button class="nav-toggle">
             <i class="fas fa-bars"></i>
         </button>
     </nav>
 
-    <!-- 项目展示 -->
-    <main class="projects-showcase">
-        <div class="section-container">
-            <!-- 项目概述 -->
-            <section class="projects-hero">
-                <div class="projects-container">
-                    <h1 class="projects-title">项目展示</h1>
-                    <p class="projects-subtitle">这里展示了我在游戏开发和工具应用领域的项目作品。每个项目都代表了不同阶段的技术探索和创新尝试。</p>
-                </div>
-            </section>
-
-            <!-- 项目分类 -->
-            <section class="project-categories">
-                <div class="category-tabs">
-                    <button class="category-tab active" data-category="all">全部</button>
-                    <button class="category-tab" data-category="game">游戏开发</button>
-                    <button class="category-tab" data-category="tool">工具应用</button>
-                </div>
-            </section>
-
-            <!-- 游戏开发项目 -->
-            <section class="project-series" aria-labelledby="game-projects">
-                <h2 id="game-projects" class="series-title">游戏开发项目</h2>
-                <div class="projects-grid">
-                    <!-- Create the World -->
-                    <article class="project-card">
-                        <div class="project-card__header">
-                            <i class="fas fa-globe project-card__icon"></i>
-                            <h3 class="project-card__title">Create the World</h3>
-                            <span class="project-card__status">规划中</span>
-                        </div>
-                        <div class="project-card__content">
-                            <p class="project-card__description">一款创新的编程游戏，玩家通过代码创建和管理自己的虚拟世界。支持创建行星、添加地形特征，甚至设计生物的遗传代码。</p>
-                            <div class="project-card__features">
-                                <span class="feature-tag">面向对象编程</span>
-                                <span class="feature-tag">遗传算法</span>
-                                <span class="feature-tag">生态系统</span>
-                            </div>
-                            <ul class="project-card__highlights">
-                                <li>自定义行星生成系统</li>
-                                <li>生物遗传模板系统</li>
-                                <li>生态系统平衡模拟</li>
-                            </ul>
-                        </div>
-                        <div class="project-card__footer">
-                            <a href="#" class="project-link" aria-label="查看项目源码">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link" aria-label="查看项目文档">
-                                <i class="fas fa-book"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- God World -->
-                    <article class="project-card">
-                        <div class="project-card__header">
-                            <i class="fas fa-chess project-card__icon"></i>
-                            <h3 class="project-card__title">God World</h3>
-                            <span class="project-card__status">规划中</span>
-                        </div>
-                        <div class="project-card__content">
-                            <p class="project-card__description">一款策略游戏，玩家作为神明通过信仰和灾难间接引导文明发展。需要平衡宗教影响力和科技进步。</p>
-                            <div class="project-card__features">
-                                <span class="feature-tag">策略</span>
-                                <span class="feature-tag">文明演化</span>
-                                <span class="feature-tag">信仰系统</span>
-                            </div>
-                            <ul class="project-card__highlights">
-                                <li>复杂的信仰影响系统</li>
-                                <li>动态的文明发展路线</li>
-                                <li>多样化的神力干预方式</li>
-                            </ul>
-                        </div>
-                        <div class="project-card__footer">
-                            <a href="#" class="project-link" aria-label="查看项目源码">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link" aria-label="查看项目文档">
-                                <i class="fas fa-book"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Little Commander -->
-                    <article class="project-card">
-                        <div class="project-card__header">
-                            <i class="fas fa-chess-knight project-card__icon"></i>
-                            <h3 class="project-card__title">Little Commander</h3>
-                            <span class="project-card__status">规划中</span>
-                        </div>
-                        <div class="project-card__content">
-                            <p class="project-card__description">战术模拟游戏，玩家可以控制从小队到军团级别的部队。包含详细的士兵属性、技能和训练系统。</p>
-                            <div class="project-card__features">
-                                <span class="feature-tag">战术</span>
-                                <span class="feature-tag">角色养成</span>
-                                <span class="feature-tag">战斗系统</span>
-                            </div>
-                            <ul class="project-card__highlights">
-                                <li>多层次的指挥系统</li>
-                                <li>丰富的角色成长路线</li>
-                                <li>真实的战术模拟</li>
-                            </ul>
-                        </div>
-                        <div class="project-card__footer">
-                            <a href="#" class="project-link" aria-label="查看项目源码">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link" aria-label="查看项目文档">
-                                <i class="fas fa-book"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Pattern War -->
-                    <article class="project-card">
-                        <div class="project-card__header">
-                            <i class="fas fa-puzzle-piece project-card__icon"></i>
-                            <h3 class="project-card__title">Pattern War</h3>
-                            <span class="project-card__status">开发中</span>
-                        </div>
-                        <div class="project-card__content">
-                            <p class="project-card__description">创新的策略游戏，结合塔防和动作元素。玩家需要保护中心核心，收集资源并升级能力。</p>
-                            <div class="project-card__features">
-                                <span class="feature-tag">塔防</span>
-                                <span class="feature-tag">资源管理</span>
-                                <span class="feature-tag">剧情</span>
-                            </div>
-                            <ul class="project-card__highlights">
-                                <li>独特的战斗系统</li>
-                                <li>深度的资源管理</li>
-                                <li>隐藏的剧情线索</li>
-                            </ul>
-                        </div>
-                        <div class="project-card__footer">
-                            <a href="#" class="project-link" aria-label="查看项目源码">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link" aria-label="查看项目文档">
-                                <i class="fas fa-book"></i>
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="project-series" aria-labelledby="tool-projects">
-                <h2 id="tool-projects" class="series-title">工具应用项目</h2>
-                <div class="projects-grid">
-                    <!-- 猿途享 -->
-                    <article class="project-card">
-                        <div class="project-card__header">
-                            <i class="fas fa-map-marked-alt project-card__icon"></i>
-                            <h3 class="project-card__title">猿途享</h3>
-                            <span class="project-card__status">待开发</span>
-                        </div>
-                        <div class="project-card__content">
-                            <p class="project-card__description">一款旅行规划应用，帮助用户规划旅程、记录旅行、分享体验。支持智能路线规划和POI推荐。</p>
-                            <div class="project-card__features">
-                                <span class="feature-tag">iOS</span>
-                                <span class="feature-tag">Swift</span>
-                                <span class="feature-tag">地图服务</span>
-                            </div>
-                            <ul class="project-card__highlights">
-                                <li>智能路线规划</li>
-                                <li>POI推荐系统</li>
-                                <li>社交分享功能</li>
-                            </ul>
-                        </div>
-                        <div class="project-card__footer">
-                            <a href="#" class="project-link" aria-label="查看项目源码">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link" aria-label="查看项目文档">
-                                <i class="fas fa-book"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- SmartPlanner -->
-                    <article class="project-card">
-                        <div class="project-card__header">
-                            <i class="fas fa-calendar-check project-card__icon"></i>
-                            <h3 class="project-card__title">SmartPlanner</h3>
-                            <span class="project-card__status">开发中</span>
-                        </div>
-                        <div class="project-card__content">
-                            <p class="project-card__description">智能日程规划工具，结合AI技术帮助用户优化时间管理。支持自动任务分类和优先级排序。</p>
-                            <div class="project-card__features">
-                                <span class="feature-tag">AI</span>
-                                <span class="feature-tag">时间管理</span>
-                                <span class="feature-tag">效率工具</span>
-                            </div>
-                            <ul class="project-card__highlights">
-                                <li>智能任务分类</li>
-                                <li>自动优先级排序</li>
-                                <li>数据可视化统计</li>
-                            </ul>
-                        </div>
-                        <div class="project-card__footer">
-                            <a href="#" class="project-link" aria-label="查看项目源码">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link" aria-label="查看项目文档">
-                                <i class="fas fa-book"></i>
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </section>
+    <section class="projects-hero">
+        <div class="projects-container">
+            <h1 class="projects-title fade-in">项目展示</h1>
+            <div class="projects-intro slide-up">
+                <p class="intro-text">
+                    这里展示了我在游戏开发和工具应用两个领域的主要项目。每个项目都凝聚着我的创意和技术探索，
+                    从最初的构思到最终的实现，都体现了我对编程的热情和追求。
+                </p>
+            </div>
         </div>
-    </main>
-
-    <!-- 页脚 -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024 HS_Jack_YZY. All rights reserved.</p>
+            </p>
         </div>
-    </footer>
+    </section>
 
-    <script>
-        // 导航栏滚动效果
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+    <section class="project-categories">
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="all">全部</button>
+            <button class="category-tab" data-category="game">游戏开发</button>
+            <button class="category-tab" data-category="tool">工具应用</button>
+        </div>
+    </section>
 
-        // 移动端菜单
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+    <section class="projects-showcase">
+        <!-- 项目卡片将通过JavaScript动态加载 -->
+    </section>
 
-        // 项目分类切换
-        const categoryTabs = document.querySelectorAll('.category-tab');
-        const projectCards = document.querySelectorAll('.project-card');
-
-        categoryTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                // 移除所有标签的active类
-                categoryTabs.forEach(t => t.classList.remove('active'));
-                // 添加当前标签的active类
-                tab.classList.add('active');
-
-                const category = tab.dataset.category;
-                
-                if (category === 'all') {
-                    projectCards.forEach(card => card.style.display = 'flex');
-                } else {
-                    projectCards.forEach(card => {
-                        if (card.closest('.project-series').id.includes(category)) {
-                            card.style.display = 'flex';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                }
-            });
-        });
-    </script>
+    <script src="js/projects.js"></script>
 </body>
 </html>
