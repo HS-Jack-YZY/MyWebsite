@@ -84,7 +84,7 @@ const projects = {
                 "自动优先级排序",
                 "数据可视化统计"
             ],
-            github: "#",
+            github: "https://github.com/HS-Jack-YZY/SmartPlanner",
             docs: "#"
         }
     ]
