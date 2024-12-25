@@ -31,6 +31,54 @@
     color: var(--text-secondary);
     font-size: 1.2rem;
     line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+/* 博客统计样式 */
+.blog-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.stat-item {
+    background: rgba(13, 23, 33, 0.7);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    width: 2rem;
+    text-align: center;
+}
+
+.stat-info {
+    flex: 1;
+}
+
+.stat-value {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
 }
 
 /* 分类标签 */
@@ -193,6 +241,11 @@
     .card-title {
         font-size: 1.3rem;
     }
+    
+    .blog-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -220,6 +273,19 @@
     .card-content {
         padding: 1.5rem;
     }
+    
+    .blog-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+    
+    .stat-value {
+        font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.85rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -234,5 +300,30 @@
     .card-meta .stats {
         flex-wrap: wrap;
         gap: 0.8rem;
+    }
+    
+    .blog-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+    
+    .stat-value {
+        font-size: 1.3rem;
+    }
+    
+    .stat-item {
+        padding: 1.2rem;
+    }
+    
+    .stat-value {
+        font-size: 1.3rem;
+    }
+    
+    .stat-label {
+        font-size: 0.85rem;
+    }
+    
+    .stat-item i {
+        font-size: 1.3rem;
     }
 }
