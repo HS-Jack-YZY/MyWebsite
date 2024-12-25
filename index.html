@@ -193,35 +193,8 @@
     <!-- 最新项目预览 -->
     <section id="featured-projects" class="featured-projects">
         <h2 class="section-title">精选项目</h2>
-        <div class="project-grid">
-            <div class="project-card hover-effect">
-                <div class="project-image">
-                    <img src="assets/projects/create-world.png" alt="Create the World">
-                </div>
-                <div class="project-info">
-                    <h3>Create the World</h3>
-                    <p>代码创世模拟器，通过编程创造和管理虚拟世界</p>
-                    <div class="project-tags">
-                        <span>C++</span>
-                        <span>游戏开发</span>
-                        <span>AI</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card hover-effect">
-                <div class="project-image">
-                    <img src="assets/projects/travel-app.png" alt="猿途享">
-                </div>
-                <div class="project-info">
-                    <h3>猿途享</h3>
-                    <p>智能行程规划APP，优化你的旅行体验</p>
-                    <div class="project-tags">
-                        <span>React Native</span>
-                        <span>Node.js</span>
-                        <span>AI</span>
-                    </div>
-                </div>
-            </div>
+        <div class="projects-grid">
+            <!-- 项目卡片将由JavaScript动态生成 -->
         </div>
         <div class="view-more">
             <a href="projects.html" class="btn secondary">查看更多项目</a>
@@ -287,23 +260,8 @@
         </div>
     </footer>
 
-    <script>
-        // 导航栏滚动效果
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // 移动端菜单
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+    <!-- 脚本引用 -->
+    <script src="js/projects.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html> 
