@@ -34,6 +34,24 @@
     <!-- 项目展示 -->
     <main class="projects-showcase">
         <div class="section-container">
+            <!-- 项目概述 -->
+            <section class="projects-hero">
+                <div class="projects-container">
+                    <h1 class="projects-title">项目展示</h1>
+                    <p class="projects-subtitle">这里展示了我在游戏开发和工具应用领域的项目作品。每个项目都代表了不同阶段的技术探索和创新尝试。</p>
+                </div>
+            </section>
+
+            <!-- 项目分类 -->
+            <section class="project-categories">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">全部</button>
+                    <button class="category-tab" data-category="game">游戏开发</button>
+                    <button class="category-tab" data-category="tool">工具应用</button>
+                </div>
+            </section>
+
+            <!-- 游戏开发项目 -->
             <section class="project-series" aria-labelledby="game-projects">
                 <h2 id="game-projects" class="series-title">游戏开发项目</h2>
                 <div class="projects-grid">
@@ -186,8 +204,8 @@
                             <a href="#" class="project-link" aria-label="查看项目源码">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="project-link" aria-label="在App Store查看">
-                                <i class="fab fa-app-store-ios"></i>
+                            <a href="#" class="project-link" aria-label="查看项目文档">
+                                <i class="fas fa-book"></i>
                             </a>
                         </div>
                     </article>
@@ -249,6 +267,33 @@
         const navLinks = document.querySelector('.nav-links');
         navToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+        });
+
+        // 项目分类切换
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // 移除所有标签的active类
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                // 添加当前标签的active类
+                tab.classList.add('active');
+
+                const category = tab.dataset.category;
+                
+                if (category === 'all') {
+                    projectCards.forEach(card => card.style.display = 'flex');
+                } else {
+                    projectCards.forEach(card => {
+                        if (card.closest('.project-series').id.includes(category)) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                }
+            });
         });
     </script>
 </body>
