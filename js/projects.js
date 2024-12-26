@@ -20,7 +20,7 @@ const projects = {
             icon: "chess",
             status: "规划中",
             description: "一款策略游戏，玩家作为神明通过信仰和灾难间接引导文明发展。需要平衡宗教影响力和科技进步。",
-            features: ["策略", "文明演化", "信仰系统"],
+            features: ["策略", "文明演化", "宏观战略", "战斗系统"],
             highlights: [
                 "复杂的信仰影响系统",
                 "动态的文明发展路线",
@@ -34,7 +34,7 @@ const projects = {
             icon: "chess-knight",
             status: "规划中",
             description: "战术模拟游戏，玩家可以控制从小队到军团级别的部队。包含详细的士兵属性、技能和训练系统。",
-            features: ["战术", "角色养成", "战斗系统"],
+            features: ["战术", "宏观战略", "战斗系统"],
             highlights: [
                 "多层次的指挥系统",
                 "丰富的角色成长路线",
@@ -64,7 +64,7 @@ const projects = {
             icon: "map-marked-alt",
             status: "待开发",
             description: "一款旅行规划应用，帮助用户规划旅程、记录旅行、分享体验。支持智能路线规划和POI推荐。",
-            features: ["iOS", "Swift", "地图服务"],
+            features: ["AI", "出行管理", "效用工具", "功能整合"],
             highlights: [
                 "智能路线规划",
                 "POI推荐系统",
@@ -78,7 +78,7 @@ const projects = {
             icon: "calendar-check",
             status: "开发中",
             description: "智能日程规划工具，结合AI技术帮助用户优化时间管理。支持自动任务分类和优先级排序。",
-            features: ["AI", "时间管理", "效率工具"],
+            features: ["AI", "时间管理", "效率工具", "iOS", "Swift"],
             highlights: [
                 "智能任务分类",
                 "自动优先级排序",
