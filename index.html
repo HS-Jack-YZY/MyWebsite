@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HS_Jack_YZY - 个人网站</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="assets/common/favicon.ico" type="image/x-icon">
 </head>
@@ -38,10 +37,7 @@
             <h1 class="fade-in">
                 <span class="greeting">你好，我是</span>
                 <span class="name">HS_Jack_YZY</span>
-                <span class="title">
-                    <span class="typing-text"></span>
-                    <span class="typing-cursor">|</span>
-                </span>
+                <span class="title">全栈开发者 / 游戏开发者</span>
             </h1>
             <p class="description slide-up">
                 热爱编程，专注于Web开发和游戏开发。
@@ -57,51 +53,15 @@
     <!-- 技能展示区 -->
     <section id="skills" class="skills">
         <h2 class="section-title">技术栈</h2>
-        
-        
-        
-        <!-- 技术栈网格 -->
-        <div class="skills-grid">
-            <div class="skill-item">
-                <i class="fas fa-code"></i>
-                <span>C++</span>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-python"></i>
-                <span>Python</span>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-html5"></i>
-                <span>HTML/CSS</span>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-js"></i>
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-vuejs"></i>
-                <span>Vue.js/React</span>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-node-js"></i>
-                <span>Node.js</span>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-swift"></i>
-                <span>Swift</span>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>MySQL</span>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-brain"></i>
-                <span>ML</span>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-cube"></i>
-                <span>Unreal5</span>
-            </div>
+        <div class="skills-cloud">
+            <div class="skill-tag hover-effect">JavaScript</div>
+            <div class="skill-tag hover-effect">Python</div>
+            <div class="skill-tag hover-effect">C++</div>
+            <div class="skill-tag hover-effect">React</div>
+            <div class="skill-tag hover-effect">Vue.js</div>
+            <div class="skill-tag hover-effect">Node.js</div>
+            <div class="skill-tag hover-effect">游戏开发</div>
+            <div class="skill-tag hover-effect">机器学习</div>
         </div>
     </section>
 
@@ -109,99 +69,122 @@
     <section id="dashboard" class="dashboard">
         <h2 class="section-title">数据概览</h2>
         <div class="dashboard-grid">
-            <!-- 关于我卡片 -->
-            <div class="dashboard-card about-card">
-                <div class="card-header">
-                    <i class="fas fa-user"></i>
-                    <h3>关于我</h3>
-                </div>
-                <div class="card-content">
-                    <div class="stat-grid">
-                        <div class="stat-box">
-                            <span class="stat-number">10%</span>
-                            <span class="stat-label">成绩排名</span>
-                        </div>
-                        <div class="stat-box">
-                            <span class="stat-number">8</span>
-                            <span class="stat-label">技术领域</span>
-                        </div>
-                        <div class="stat-box">
-                            <span class="stat-number">3</span>
-                            <span class="stat-label">研究方向</span>
-                        </div>
-                        <div class="stat-box">
-                            <span class="stat-number">ENTJ</span>
-                            <span class="stat-label">性格</span>
-                        </div>
-                    </div>
-                    <a href="about.html" class="card-link">
-                        <span>了解更多</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- 项目卡片 -->
-            <div class="dashboard-card projects-card">
+            <!-- 代码统计 -->
+            <div class="dashboard-card">
                 <div class="card-header">
                     <i class="fas fa-code"></i>
-                    <h3>项目成果</h3>
+                    <h3>代码统计</h3>
                 </div>
                 <div class="card-content">
-                    <div class="stat-grid">
-                        <div class="stat-box">
-                            <span class="stat-number">4</span>
-                            <span class="stat-label">开源项目</span>
-                        </div>
-                        <div class="stat-box">
-                            <span class="stat-number">5万+</span>
-                            <span class="stat-label">代码行数</span>
-                        </div>
-                        <div class="stat-box">
-                            <span class="stat-number">6</span>
-                            <span class="stat-label">总项目</span>
-                        </div>
-                        <div class="stat-box">
-                            <span class="stat-number">20+</span>
-                            <span class="stat-label">技术栈</span>
-                        </div>
+                    <div class="stat-item">
+                        <span class="stat-label">代码行数</span>
+                        <span class="stat-value">150,000+</span>
                     </div>
-                    <a href="projects.html" class="card-link">
-                        <span>查看项目</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <div class="stat-item">
+                        <span class="stat-label">项目数量</span>
+                        <span class="stat-value">12</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">贡献度</span>
+                        <span class="stat-value">
+                            <div class="contribution-graph">
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 80%"></div>
+                                <div class="bar" style="height: 40%"></div>
+                                <div class="bar" style="height: 90%"></div>
+                                <div class="bar" style="height: 70%"></div>
+                            </div>
+                        </span>
+                    </div>
                 </div>
             </div>
             
-            <!-- 博客卡片 -->
-            <div class="dashboard-card projects-card">
+            <!-- 技能分布 -->
+            <div class="dashboard-card">
                 <div class="card-header">
-                    <i class="fas fa-pen"></i>
-                    <h3>博客文章</h3>
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>技能分布</h3>
+                </div>
+                <div class="card-content">
+                    <div class="skill-distribution">
+                        <div class="skill-bar">
+                            <span class="skill-name">前端开发</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">后端开发</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">游戏开发</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 博客统计 -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-book"></i>
+                    <h3>博客统计</h3>
                 </div>
                 <div class="card-content">
                     <div class="stat-grid">
                         <div class="stat-box">
-                            <span class="stat-number">10</span>
+                            <span class="stat-number">50+</span>
                             <span class="stat-label">文章</span>
                         </div>
                         <div class="stat-box">
-                            <span class="stat-number">14776</span>
+                            <span class="stat-number">10k+</span>
                             <span class="stat-label">阅读</span>
                         </div>
                         <div class="stat-box">
-                            <span class="stat-number">36</span>
+                            <span class="stat-number">500+</span>
                             <span class="stat-label">点赞</span>
                         </div>
                         <div class="stat-box">
-                            <span class="stat-number">121</span>
+                            <span class="stat-number">200+</span>
                             <span class="stat-label">收藏</span>
                         </div>
                     </div>
-                    <a href="blog.html" class="card-link">
-                        <span>浏览文章</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                </div>
+            </div>
+            
+            <!-- 活动日历 -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>活动日历</h3>
+                </div>
+                <div class="card-content">
+                    <div class="activity-calendar">
+                        <div class="calendar-grid">
+                            <div class="calendar-day" style="background-color: var(--primary-color-10)"></div>
+                            <div class="calendar-day" style="background-color: var(--primary-color-25)"></div>
+                            <div class="calendar-day" style="background-color: var(--primary-color-50)"></div>
+                            <div class="calendar-day" style="background-color: var(--primary-color-75)"></div>
+                            <div class="calendar-day" style="background-color: var(--primary-color)"></div>
+                            <!-- 更多日历格子 -->
+                        </div>
+                        <div class="calendar-legend">
+                            <span>活跃度</span>
+                            <div class="legend-items">
+                                <div class="legend-item">低</div>
+                                <div class="legend-item">中</div>
+                                <div class="legend-item">高</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -210,8 +193,35 @@
     <!-- 最新项目预览 -->
     <section id="featured-projects" class="featured-projects">
         <h2 class="section-title">精选项目</h2>
-        <div class="projects-grid">
-            <!-- 项目卡片将由JavaScript动态生成 -->
+        <div class="project-grid">
+            <div class="project-card hover-effect">
+                <div class="project-image">
+                    <img src="assets/projects/create-world.png" alt="Create the World">
+                </div>
+                <div class="project-info">
+                    <h3>Create the World</h3>
+                    <p>代码创世模拟器，通过编程创造和管理虚拟世界</p>
+                    <div class="project-tags">
+                        <span>C++</span>
+                        <span>游戏开发</span>
+                        <span>AI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card hover-effect">
+                <div class="project-image">
+                    <img src="assets/projects/travel-app.png" alt="猿途享">
+                </div>
+                <div class="project-info">
+                    <h3>猿途享</h3>
+                    <p>智能行程规划APP，优化你的旅行体验</p>
+                    <div class="project-tags">
+                        <span>React Native</span>
+                        <span>Node.js</span>
+                        <span>AI</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="view-more">
             <a href="projects.html" class="btn secondary">查看更多项目</a>
@@ -222,7 +232,30 @@
     <section id="latest-posts" class="latest-posts">
         <h2 class="section-title">最新文章</h2>
         <div class="posts-grid">
-            <!-- 文章卡片将由JavaScript动态生成 -->
+            <article class="post-card hover-effect">
+                <div class="post-info">
+                    <span class="post-category">模式识别</span>
+                    <h3>最优分类超平面与支持向量机</h3>
+                    <p>深入探讨SVM原理及其在模式识别中的应用...</p>
+                    <div class="post-meta">
+                        <span><i class="fas fa-eye"></i> 2411</span>
+                        <span><i class="fas fa-thumbs-up"></i> 3</span>
+                        <span><i class="fas fa-bookmark"></i> 10</span>
+                    </div>
+                </div>
+            </article>
+            <article class="post-card hover-effect">
+                <div class="post-info">
+                    <span class="post-category">算法</span>
+                    <h3>数据结构与算法分析</h3>
+                    <p>探索高效的数据结构设计和算法优化方案...</p>
+                    <div class="post-meta">
+                        <span><i class="fas fa-eye"></i> 1846</span>
+                        <span><i class="fas fa-thumbs-up"></i> 5</span>
+                        <span><i class="fas fa-bookmark"></i> 8</span>
+                    </div>
+                </div>
+            </article>
         </div>
         <div class="view-more">
             <a href="blog.html" class="btn secondary">查看更多文章</a>
@@ -254,9 +287,23 @@
         </div>
     </footer>
 
-    <!-- 脚本引用 -->
-    <script src="js/projects.js"></script>
-    <script src="js/blog.js"></script>
-    <script src="js/index.js"></script>
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // 移动端菜单
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html> 
