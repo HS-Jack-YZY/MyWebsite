@@ -104,8 +104,70 @@ function initMobileMenu() {
     });
 }
 
+// 打字机效果实现
+class TypeWriter {
+    constructor(element, words, typeSpeed = 200, holdTime = 3000) {
+        this.textElement = element;
+        this.words = words;
+        this.typeSpeed = typeSpeed;
+        this.holdTime = holdTime;
+        this.txt = '';
+        this.wordIndex = 0;
+        this.isDeleting = false;
+        this.type();
+    }
+
+    type() {
+        // 当前单词的索引
+        const current = this.wordIndex % this.words.length;
+        // 获取完整的单词
+        const fullTxt = this.words[current];
+
+        // 根据是否在删除来改变文本
+        if (this.isDeleting) {
+            // 删除一个字符
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            // 添加一个字符
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        // 插入文本
+        this.textElement.textContent = this.txt;
+
+        // 初始打字速度
+        let typeSpeed = this.typeSpeed;
+
+        if (this.isDeleting) {
+            // 删除速度是打字速度的一半
+            typeSpeed /= 2;
+        }
+
+        // 如果单词已经写完
+        if (!this.isDeleting && this.txt === fullTxt) {
+            // 暂停一段时间后开始删除
+            typeSpeed = this.holdTime;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            // 移动到下一个单词
+            this.wordIndex++;
+            // 暂停一下再开始打字
+            typeSpeed = 500;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+    }
+}
+
 // 页面初始化
 document.addEventListener('DOMContentLoaded', () => {
+    // 初始化打字机效果
+    const typeText = document.querySelector('.typing-text');
+    const words = ['全栈开发者', '游戏开发者', '创业者'];
+    new TypeWriter(typeText, words, 200, 3000);
+
+    // 其他初始化
     initScrollEffect();
     initMobileMenu();
     renderFeaturedProjects();

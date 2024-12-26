@@ -1836,7 +1836,7 @@ body {
     margin: 0 auto;
 }
 
-/* 项目卡���样式 */
+/* 项目卡片样式 */
 .project-card {
     background: var(--secondary-color);
     border-radius: 12px;
@@ -1980,4 +1980,28 @@ body {
 
 .project-link:hover {
     color: var(--primary-color);
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 2px;
+    animation: blink 0.7s infinite;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.typing-text {
+    border-right: none;
+    display: inline-block;
+    color: var(--text-secondary);
 }
